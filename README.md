@@ -27,7 +27,7 @@
 
 ### 2. 설치 및 빌드 방법
 
-1. Java 버전이 17이 아닐 경우 , 아래 진행
+[1. Java 버전이 17이 아닐 경우 , 아래 진행]
 
 1) sudo apt-get update
 
@@ -35,26 +35,27 @@
 
 3) JAVA_HOME 등록:  vi /etc/profile → 하단에 export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64  입력 후 저장
 
-1. gradle 빌드 방법
+[2. gradle 빌드 방법]
 
-4) git clone https://github.com/RorNHJ/point-api-server.git
-5) chmod 755 point-api-server/gradlew
+1) git clone https://github.com/RorNHJ/point-api-server.git
 
-6) cd point-api-server
+2) chmod 755 point-api-server/gradlew
 
-7) ./gradlew clean build
+3) cd point-api-server
 
-8) java -jar build/libs/point-api-server-0.0.1-SNAPSHOT.jar
+4) ./gradlew clean build
 
-1. 테스트 방법
+5) java -jar build/libs/point-api-server-0.0.1-SNAPSHOT.jar
 
-9) UnitTest.java  → 단위테스트 ( 각 API별 테스트 메소드 구현)
+[3. 테스트 방법]
 
-10) IntegrationTest.java → 통합테스트 ( 일련의 API 시나리오)
+1) UnitTest.java  → 단위테스트 ( 각 API별 테스트 메소드 구현)
 
-11) [http://localhost:8080/h2-console](http://localhost:8080/h2-console)  에서 아래 그림 처럼 입력
+2) IntegrationTest.java → 통합테스트 ( 일련의 API 시나리오)
 
-![Untitled](readme_img/DB정보.png)
+3) [http://localhost:8080/h2-console](http://localhost:8080/h2-console)  에서 아래 그림 처럼 입력
+
+![DB정보.png](readme_img/DB정보.png)
 
 ### 3. 설계 설명
 
