@@ -43,7 +43,7 @@ public class PointDetailEntity extends AbstractEntity {
 	@Comment("포인트 번호")
 	private PointEntity pointNo; 
 	
-    @Comment("사용 관련 포인트번호")
+    @Comment("관련 포인트번호")
     @Column(nullable = true)
     private Long refPointNo; 
     
